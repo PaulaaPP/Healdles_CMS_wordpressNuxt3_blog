@@ -1,8 +1,10 @@
 <script lang="ts" setup>
-const { data: posts } = await useFetch<any>(
-  "http://myblognuxt.local/wp-json/wp/v2/posts?_embed",
-);
-// console.log(data);
+// const { data: posts } = await useFetch<any>(
+//   "http://myblognuxt.local/wp-json/wp/v2/posts?_embed",
+// );
+// // console.log(data);
+
+const { data: posts } = await useWpApi().getPosts<any>();
 </script>
 
 <template>
