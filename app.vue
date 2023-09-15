@@ -1,7 +1,11 @@
 <template>
-  <div>
+  <div class="flex min-h-screen flex-col">
     <MenuNav />
-    <NuxtPage />
+    <main class="w-full grow items-start">
+      <NuxtPage />
+    </main>
+
+    <Footer />
   </div>
 </template>
 
