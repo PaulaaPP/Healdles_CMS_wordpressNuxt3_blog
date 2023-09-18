@@ -5,10 +5,10 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-  // Menu,
-  // MenuButton,
-  // MenuItem,
-  // MenuItems,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
 } from "@headlessui/vue";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/vue/24/outline";
 
@@ -17,6 +17,11 @@ const route = useRoute();
 const navigation = [
   { name: "Home", href: "/", current: route.name == "index" },
   { name: "Blog", href: "/blog", current: route.name.includes("blog") },
+  {
+    name: "Kategorie",
+    href: "/categories",
+    current: route.name.includes("categories"),
+  },
   { name: "Konakt", href: "/contact", current: route.name == "contact" },
 ];
 </script>
@@ -28,7 +33,7 @@ const navigation = [
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
           <DisclosureButton
-            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            class="hover:bg-darkGreen focus:ring-lightGreen text-brightGreen hover:text-brightGreen relative inline-flex items-center justify-center rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-inset"
           >
             <span class="absolute -inset-0.5" />
             <span class="sr-only">Open main menu</span>
@@ -39,9 +44,11 @@ const navigation = [
         <div
           class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
         >
-          <div class="flex flex-shrink-0 items-center font-lobster text-lg">
-            <nuxt-link to="/" class="font-mono font-bold italic text-[#07c0b6]"
-              ><span class="text-[#e762dc]">Od Zera do </span> Front-End
+          <div
+            class="mx-[7.5rem] flex flex-shrink-0 items-center text-sm font-bold md:mx-2 md:text-base"
+          >
+            <nuxt-link to="/" class="text-brightGreen"
+              ><span class="text-brightPurple">Od Zera do </span> Front-End
               Developera
             </nuxt-link>
           </div>
@@ -53,9 +60,9 @@ const navigation = [
                 :href="item.href"
                 :class="[
                   item.current
-                    ? 'bg-[#156973] text-white'
+                    ? 'text-brightPurple bg-[#156973]'
                     : 'text-gray-300 hover:bg-[#156973] hover:text-white',
-                  'rounded-md px-3 py-2 text-sm font-medium',
+                  'rounded-md px-3 py-2 text-base font-semibold md:text-lg',
                 ]"
                 :aria-current="item.current ? 'page' : undefined"
                 >{{ item.name }}</a
@@ -75,8 +82,8 @@ const navigation = [
           :href="item.href"
           :class="[
             item.current
-              ? 'bg-[#156973] text-white'
-              : 'text-gray-300 hover:bg-[#156973] hover:text-white',
+              ? 'text-brightGreen bg-lightGreen'
+              : 'text-brightPurple hover:bg-[#156973] hover:text-white',
             'block rounded-md px-3 py-2 text-base font-medium',
           ]"
           :aria-current="item.current ? 'page' : undefined"

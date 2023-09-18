@@ -11,12 +11,12 @@ const lastThreePosts = ref(posts.value.slice(0, 3));
     <div class="flex-wrap md:mx-10">
       <!-- Image -->
       <img
-        class="float-left w-5/12 rounded-[2.5rem] p-5 opacity-70 md:w-1/6"
+        class="mx-auto w-5/12 rounded-[2.5rem] opacity-70 md:float-left md:w-1/6 md:px-5"
         src="../assets/img/myfoto3dsmall.png"
       />
       <!-- Text -->
       <h2 class="mt-10 text-center text-3xl italic md:text-start">
-        👋🏻 Witaj, jestem Paula!
+        Witaj, jestem Paula!
       </h2>
       <p class="p-2 text-base italic text-gray-900 sm:text-xs">
         Jestem początkującym frontem developerem
@@ -43,7 +43,7 @@ const lastThreePosts = ref(posts.value.slice(0, 3));
   <!-- Newest posts -->
   <section class="container my-16">
     <h2 class="mt-8 text-3xl font-bold">Ostanio dodane posty</h2>
-    <div class="grid gap-10 pt-8 md:grid-cols-3">
+    <div class="grid gap-10 pt-8 md:mx-5 md:grid-cols-3">
       <Card
         v-for="(post, index) in lastThreePosts"
         :key="index"

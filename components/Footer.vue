@@ -18,7 +18,7 @@ const links = [
     <section
       class="mx-auto flex max-w-7xl flex-row px-2 py-5 text-gray-300 sm:px-4 lg:py-6"
     >
-      <p class="flex-1 text-xs md:text-base">
+      <p class="mx-1 flex-1 text-xs md:text-base">
         &copy; PaulaPiskorz 2023. All Rights Reserved
       </p>
       <a

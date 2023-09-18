@@ -1,6 +1,9 @@
 <template>
+  <Header title="Kontakt">
+    <!-- <BackroundLight></BackroundLight> -->
+    <p>lololo</p>
+  </Header>
   <section class="container mx-auto my-12">
-    <h1 class="text-gradient-title my-10 text-5xl">Kontact</h1>
     <p class="text-2xl text-zinc-900">
       Podoba Ci się to, co robię? Moje artykuły wzbudziły Twoje zainteresowanie?
       <br />Jeśli <span class="text-1xl my-2 uppercase"> tak </span> i jesteś

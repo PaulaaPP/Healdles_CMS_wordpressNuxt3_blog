@@ -6,6 +6,13 @@ export default defineNuxtConfig({
       charset: "utf-8",
       title: "Od Zera do Frontentd Developera",
       viewport: "width=device-width, initial-scale=1",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Blog o nauce programowania, tematyka aplikacji webowych głównie dla początkujących Juniorów",
+        },
+      ],
     },
   },
   modules: ["@nuxtjs/tailwindcss", "nuxt-icon"],
