@@ -16,7 +16,9 @@ const truncateExcerpt = (text: string, maxLength: number) => {
 
 <template>
   <NuxtLink :to="`/${slug}`">
-    <div class="col-span-1 py-10 shadow-lg">
+    <div
+      class="col-span-1 py-10 shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:transform"
+    >
       <!-- Blog image -->
       <div v-if="image" class="relative h-[200px] w-full">
         <img :src="image" alt="" class="absolute h-full w-full object-cover" />
@@ -29,7 +31,7 @@ const truncateExcerpt = (text: string, maxLength: number) => {
         <!-- <p v-if="excerpt" class="mb-3 text-sm">
         {{ excerpt }}
       </p> -->
-        <div v-html="truncateExcerpt(excerpt, 100)"></div>
+        <div v-html="truncateExcerpt(excerpt, 250)"></div>
       </div>
       <span class="mx-3 flex justify-end text-base font-bold"
         >Czytaj dalej</span

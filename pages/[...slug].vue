@@ -12,8 +12,8 @@ const post = posts.value[0];
     <section class="header container py-24">
       <div>
         <!-- post title -->
-        <div class="post-title mb-3 text-center">
-          <h1 class="text-5xl font-bold leading-normal">
+        <div class="post-title my-10 text-center">
+          <h1 class="text-3xl font-bold leading-normal md:text-5xl">
             {{ post.title.rendered }}
           </h1>
         </div>
@@ -22,11 +22,11 @@ const post = posts.value[0];
           <span class="mx-3"
             >Napisane przez: {{ post._embedded["author"][0].name }}</span
           >
-          <span>Opublikowane dnia: {{ post.date }} </span>
+          <p>Opublikowane dnia: {{ post.date }}</p>
         </div>
         <!-- post image -->
         <div
-          class="relative mx-auto mb-12 h-[250px] w-full overflow-hidden rounded shadow-xl sm:h-[500px]"
+          class="post_img relative mx-auto mb-12 h-[250px] w-full overflow-hidden rounded shadow-xl sm:h-[500px]"
         >
           <img
             :src="post._embedded['wp:featuredmedia']?.[0]?.source_url"
@@ -44,3 +44,45 @@ const post = posts.value[0];
     </section>
   </main>
 </template>
+
+<style>
+.post-meta {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.blog_content h2 {
+  font-size: 25px;
+  font-weight: 900;
+  margin: 18px 0;
+
+  @media (max-width: 768px) {
+    /* Styl dla ekranów o szerokości do 768 pikseli */
+    font-size: 15px;
+    margin: 12px 0;
+  }
+}
+.blog_content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 18px 0;
+}
+.blog_content p {
+  margin: 7px 0;
+}
+
+.blog_content figure img {
+  margin: 25px 0;
+  height: 100%;
+  width: 100%;
+}
+
+.blog_content ol {
+  list-style-type: decimal;
+  margin: 0 7px;
+}
+.blog_content li {
+  margin: 7px 0;
+  padding: 10px;
+}
+</style>

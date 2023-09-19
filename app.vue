@@ -9,8 +9,4 @@
   </div>
 </template>
 
-<style>
-.container {
-  @apply mx-auto max-w-5xl px-12 sm:px-0;
-}
-</style>
+<style></style>

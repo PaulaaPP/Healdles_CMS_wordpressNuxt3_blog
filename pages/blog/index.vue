@@ -3,10 +3,10 @@ const { data: posts } = await useWpApi().getPosts<any>();
 </script>
 
 <template>
-  <Header class="">
+  <Header>
     <div class="flex flex-col md:mx-10">
       <h1 class="text-4xl font-bold">Blog</h1>
-      <p class="mx-5 pt-11 md:indent-8">
+      <p class="pt-11 md:indent-8 lg:mx-5 lg:text-base">
         Uwielbiam opowiadać o tym, co właśnie krąży mi po głowie, projekty, nad
         którymi teraz pracuję, lub nowinki technologiczne, które wciąż odkrywam.
         To moje sposobów na wyrażenie siebie i dzielenie się swoimi pasjami.

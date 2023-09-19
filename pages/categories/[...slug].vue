@@ -14,7 +14,7 @@ const { data: posts } = await useWpApi().getPosts<any>(categories.value[0].id);
 <template>
   <!-- dynamically displays the category name-->
   <Header :title="` ${categories[0].name}`" />
-  <section class="mx-10 py-10">
+  <section class="container py-10 md:mx-10">
     <div class="grid gap-5 sm:grid-cols-3">
       <Card
         v-for="post in posts"
@@ -26,8 +26,8 @@ const { data: posts } = await useWpApi().getPosts<any>(categories.value[0].id);
       >
       </Card>
     </div>
-    <span class="text-1xl my-20 bg-slate-500 font-semibold">
-      <NuxtLink to="/categories">Powrót</NuxtLink></span
-    >
+    <button class="text-1xl my-20 rounded-md bg-lightGreen p-5 font-semibold">
+      <NuxtLink to="/categories">Powrót</NuxtLink>
+    </button>
   </section>
 </template>

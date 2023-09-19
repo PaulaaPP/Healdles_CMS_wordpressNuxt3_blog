@@ -1,24 +1,28 @@
 <template>
-  <Header title="Kontakt">
-    <!-- <BackroundLight></BackroundLight> -->
-    <p>lololo</p>
-  </Header>
-  <section class="container mx-auto my-12">
-    <p class="text-2xl text-zinc-900">
+  <Header title="Kontakt"> </Header>
+  <section class="container mx-2 my-12 md:mx-10">
+    <p class="text-zinc-900 md:text-2xl">
       Podoba Ci się to, co robię? Moje artykuły wzbudziły Twoje zainteresowanie?
       <br />Jeśli <span class="text-1xl my-2 uppercase"> tak </span> i jesteś
       zainteresowany współpracą ..
     </p>
-    <h2 class="mb-4 mt-9 text-3xl text-[#156973]">Napisz do mnie!</h2>
+    <h2 class="mb-4 mt-9 text-xl font-bold text-[#156973] md:text-3xl">
+      Napisz do mnie!
+    </h2>
     <Icon
       name="ic:baseline-alternate-email"
       class="mx-1 text-4xl text-[#9e5b9e]"
     />
-    <span class="text-xl">piskorzpaula@gmail.com </span>
+    <span class="md:text-xl">piskorzpaula@gmail.com </span>
 
-    <h3 class="mb-4 mt-14 text-3xl text-[#156973]">Spotkajmy sie na:</h3>
+    <h3 class="mb-4 mt-14 text-xl font-bold text-[#156973] md:text-3xl">
+      Spotkajmy sie na:
+    </h3>
 
-    <a href="www.linkedin.com/in/paula-piskorz-a02139283" target="_blank">
+    <a
+      href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+      target="_blank"
+    >
       <Icon name="bx:bxl-linkedin-square" class="icon-style"></Icon
     ></a>
     <a href="https://dev.to/paulaa" target="_blank">
@@ -29,4 +33,5 @@
       <Icon name="ion:logo-github" class="icon-style"></Icon>
     </a>
   </section>
+  <!-- <BackroundLight></BackroundLight> -->
 </template>
