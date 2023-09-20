@@ -74,7 +74,11 @@ const post = posts.value[0];
 .blog_content figure img {
   margin: 25px 0;
   height: 100%;
-  width: 100%;
+  width: 88%;
+}
+figure {
+  justify-content: center;
+  display: flex;
 }
 
 .blog_content ol {
