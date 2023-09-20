@@ -33,5 +33,5 @@
       <Icon name="ion:logo-github" class="icon-style"></Icon>
     </a>
   </section>
-  <!-- <BackroundLight></BackroundLight> -->
+
 </template>

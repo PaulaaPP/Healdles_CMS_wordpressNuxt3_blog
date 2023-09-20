@@ -57,7 +57,6 @@ const post = posts.value[0];
   margin: 18px 0;
 
   @media (max-width: 768px) {
-    /* Styl dla ekranów o szerokości do 768 pikseli */
     font-size: 15px;
     margin: 12px 0;
   }
