@@ -22,7 +22,7 @@ const navigation = [
     href: "/categories",
     current: route.name.includes("categories"),
   },
-  { name: "Konakt", href: "/contact", current: route.name == "contact" },
+  { name: "Kontakt", href: "/contact", current: route.name == "contact" },
 ];
 </script>
 
@@ -33,7 +33,7 @@ const navigation = [
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
           <DisclosureButton
-            class="hover:bg-darkGreen focus:ring-lightGreen text-brightGreen hover:text-brightGreen relative inline-flex items-center justify-center rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-inset"
+            class="relative inline-flex items-center justify-center rounded-md p-3 text-teal-200 hover:bg-darkGreen hover:text-teal-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-lightGreen"
           >
             <span class="absolute -inset-0.5" />
             <span class="sr-only">Open main menu</span>
@@ -60,7 +60,7 @@ const navigation = [
                 :href="item.href"
                 :class="[
                   item.current
-                    ? 'text-brightPurple bg-[#156973]'
+                    ? 'bg-[#156973] text-brightPurple'
                     : 'text-gray-300 hover:bg-[#156973] hover:text-white',
                   'rounded-md px-3 py-2 text-base font-semibold md:text-lg',
                 ]"
@@ -82,7 +82,7 @@ const navigation = [
           :href="item.href"
           :class="[
             item.current
-              ? 'text-brightGreen bg-lightGreen'
+              ? 'bg-lightGreen text-white'
               : 'text-brightPurple hover:bg-[#156973] hover:text-white',
             'block rounded-md px-3 py-2 text-base font-medium',
           ]"

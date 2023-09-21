@@ -1,6 +1,6 @@
 <template>
   <Header title="Kontakt"> </Header>
-  <section class="container mx-2 my-12 md:mx-10">
+  <section class="container md:px-10">
     <p class="text-zinc-900 md:text-2xl">
       Podoba Ci się to, co robię? Moje artykuły wzbudziły Twoje zainteresowanie?
       <br />Jeśli <span class="text-1xl my-2 uppercase"> tak </span> i jesteś
@@ -33,5 +33,4 @@
       <Icon name="ion:logo-github" class="icon-style"></Icon>
     </a>
   </section>
-
 </template>

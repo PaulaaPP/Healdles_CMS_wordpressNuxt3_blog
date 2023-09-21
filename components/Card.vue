@@ -31,7 +31,7 @@ const truncateExcerpt = (text: string, maxLength: number) => {
         <!-- <p v-if="excerpt" class="mb-3 text-sm">
         {{ excerpt }}
       </p> -->
-        <div v-html="truncateExcerpt(excerpt, 250)"></div>
+        <div v-html="truncateExcerpt(excerpt, 150)"></div>
       </div>
       <span class="mx-3 flex justify-end text-base font-bold"
         >Czytaj dalej</span

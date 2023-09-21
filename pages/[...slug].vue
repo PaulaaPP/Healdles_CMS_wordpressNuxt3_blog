@@ -35,7 +35,7 @@ const post = posts.value[0];
           />
         </div>
         <!-- post Content -->
-        <div class="blog_content">
+        <div class="blog_content mx-3">
           <div>
             <div v-html="post.content.rendered" class="item-center"></div>
           </div>
