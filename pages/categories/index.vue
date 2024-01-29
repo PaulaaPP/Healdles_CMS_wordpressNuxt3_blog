@@ -3,7 +3,7 @@ const { data: categories } = await useWpApi().getCategories<any>();
 </script>
 
 <template>
-  <Header title="Kategorie" />
+  <Header title="Categories" />
   <section class="container py-10">
     <div class="flex flex-wrap">
       <NuxtLink

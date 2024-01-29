@@ -33,9 +33,7 @@ const truncateExcerpt = (text: string, maxLength: number) => {
       </p> -->
         <div v-html="truncateExcerpt(excerpt, 150)"></div>
       </div>
-      <span class="mx-3 flex justify-end text-base font-bold"
-        >Czytaj dalej</span
-      >
+      <span class="mx-3 flex justify-end text-base font-bold">Read more</span>
     </div>
   </NuxtLink>
 </template>

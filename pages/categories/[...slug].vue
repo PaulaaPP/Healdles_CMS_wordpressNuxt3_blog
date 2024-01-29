@@ -27,7 +27,7 @@ const { data: posts } = await useWpApi().getPosts<any>(categories.value[0].id);
       </Card>
     </div>
     <button class="text-1xl my-20 rounded-md bg-lightGreen p-5 font-semibold">
-      <NuxtLink to="/categories">Powrót</NuxtLink>
+      <NuxtLink to="/categories">Back</NuxtLink>
     </button>
   </section>
 </template>

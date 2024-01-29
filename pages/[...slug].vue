@@ -20,9 +20,9 @@ const post = posts.value[0];
         <!-- post meta -->
         <div class="post-meta text-center">
           <span class="mx-3"
-            >Napisane przez: {{ post._embedded["author"][0].name }}</span
+            >Written by: {{ post._embedded["author"][0].name }}</span
           >
-          <p>Opublikowane dnia: {{ post.date }}</p>
+          <p>Published on: {{ post.date }}</p>
         </div>
         <!-- post image -->
         <div

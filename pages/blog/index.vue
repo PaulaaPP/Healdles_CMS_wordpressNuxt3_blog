@@ -7,11 +7,11 @@ const { data: posts } = await useWpApi().getPosts<any>();
     <div class="flex flex-col md:mx-10">
       <h1 class="text-4xl font-bold">Blog</h1>
       <p class="pt-11 md:indent-8 lg:mx-5 lg:text-base">
-        Uwielbiam opowiadać o tym, co właśnie krąży mi po głowie, projekty, nad
-        którymi teraz pracuję, lub nowinki technologiczne, które wciąż odkrywam.
-        To moje sposobów na wyrażenie siebie i dzielenie się swoimi pasjami.
-        Zawsze trafiają się nowe fascynujące rzeczy, które mnie wciągają, i z
-        przyjemnością się nimi dzielę w moich tekstach.
+        I love to talk about what's just going around in my head, projects I'm
+        working on that I'm working on right now, or technological innovations
+        that I'm still discovering. These are my ways of expressing myself and
+        sharing my passions. I always find new fascinating things that draw me
+        in, and I'm happy to pleasure to share them in my texts.
       </p>
     </div>
   </Header>
@@ -30,8 +30,3 @@ const { data: posts } = await useWpApi().getPosts<any>();
     </div>
   </section>
 </template>
-<!--      :image="post._embedded['wp:featuredmedia']?.[0]?.source_url"
-['wp:featuredmedia']? -- this with ? if some post doesn't have a source url / image 
-[0]? -- this if some post doesn't have id
-if only one post doesn't have future images/_embedded/wp:featuredmedia then i will have error ! 
--->

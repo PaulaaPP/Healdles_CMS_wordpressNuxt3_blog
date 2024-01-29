@@ -5,10 +5,10 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
+  // Menu,
+  // MenuButton,
+  // MenuItem,
+  // MenuItems,
 } from "@headlessui/vue";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/vue/24/outline";
 
@@ -18,11 +18,11 @@ const navigation = [
   { name: "Home", href: "/", current: route.name == "index" },
   { name: "Blog", href: "/blog", current: route.name.includes("blog") },
   {
-    name: "Kategorie",
+    name: "Categories",
     href: "/categories",
     current: route.name.includes("categories"),
   },
-  { name: "Kontakt", href: "/contact", current: route.name == "contact" },
+  { name: "Contact", href: "/contact", current: route.name == "contact" },
 ];
 </script>
 
@@ -48,8 +48,8 @@ const navigation = [
             class="mx-[7.5rem] flex flex-shrink-0 items-center text-sm font-bold md:mx-2 md:text-base"
           >
             <nuxt-link to="/" class="text-brightGreen"
-              ><span class="text-brightPurple">Od Zera do </span> Front-End
-              Developera
+              ><span class="text-brightPurple">From Zero to</span> Front-End
+              Hero
             </nuxt-link>
           </div>
           <div class="hidden sm:ml-6 sm:block">
@@ -93,20 +93,3 @@ const navigation = [
     </DisclosurePanel>
   </Disclosure>
 </template>
-<!-- 
-<template>
-  <nav class="bg-gray-900 py-5 text-white">
-    <div class="container flex justify-between">
-      <NuxtLink href="" class="logo text-xl font-bold">
-        Od Zera do Front-End Developera</NuxtLink
-      >
-
-      <ul class="inline-flex gap-3">
-        <li><NuxtLink href="/">Home</NuxtLink></li>
-        <li><NuxtLink href="/blog">Blog</NuxtLink></li>
-        <li><NuxtLink href="/categories">Categories</NuxtLink></li>
-        <li><NuxtLink href="/contact">Kontakt</NuxtLink></li>
-      </ul>
-    </div>
-  </nav>
-</template> -->

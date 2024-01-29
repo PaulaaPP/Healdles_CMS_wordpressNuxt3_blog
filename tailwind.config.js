@@ -13,10 +13,9 @@ module.exports = {
         PTSerif: ["PT Serif", "serif"],
         Montserrat: ["Montserrat", "sans-serif"],
 
-        // Dodaj inne niestandardowe czcionki, jeśli są potrzebne
       },
       colors: {
-        // Dodaj własne kolory tutaj
+ 
         darkGreen: "#1b313e",
         lightGreen: "#156973",
         brightGreen: "#07c0b6",
