@@ -22,4 +22,8 @@ body {
   .container {
     @apply mx-auto max-w-5xl px-4  lg:px-12;
   }
+
+  .backround-color {
+    @apply bg-gradient-to-br from-[#2394a1cc] from-10% via-[#3e657e7e] via-30% to-[#614674d7] to-90%;
+  }
 }

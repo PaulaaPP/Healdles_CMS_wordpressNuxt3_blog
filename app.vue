@@ -1,7 +1,8 @@
 <template>
   <div class="flex min-h-screen flex-col">
     <MenuNav />
-    <main class="w-full grow items-start">
+
+    <main class="backround-color w-full grow items-start">
       <NuxtPage />
     </main>
 
@@ -9,4 +10,19 @@
   </div>
 </template>
 
-<style></style>
+<style>
+/* dark {
+  background-color: #1a202c;
+  color: white;
+} */
+</style>
+
+<script setup>
+import { ref } from "vue";
+
+const darkMode = ref(false);
+
+const toggleDarkMode = () => {
+  darkMode.value = !darkMode.value;
+};
+</script>

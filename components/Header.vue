@@ -6,11 +6,19 @@ defineProps<{
 
 <template>
   <div class="relative m-8 space-y-4">
-    <section class="hero flex flex-col rounded-lg bg-gray-200 py-10">
+    <!--div for glass design-->
+    <div
+      class="transparent absolute inset-0 rounded-lg border-2 opacity-25"
+    ></div>
+
+    <!-- Section content-->
+    <section
+      class="relative z-10 flex flex-col rounded-lg bg-white/30 py-10 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] backdrop-blur-md"
+    >
       <div class="container flex items-center">
-        <!-- v-if is for not showing empty tag -->
+        <!--The v-if condition checks whether a title is set -->
         <h1 v-if="title" class="text-4xl font-bold">{{ title }}</h1>
-        <!-- this is header form index.vue and will be displayed if there is no other header-->
+        <!-- This part will be displayed if there is no other heading-->
         <slot />
       </div>
     </section>

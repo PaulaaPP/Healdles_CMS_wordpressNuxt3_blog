@@ -12,10 +12,8 @@ module.exports = {
       fontFamily: {
         PTSerif: ["PT Serif", "serif"],
         Montserrat: ["Montserrat", "sans-serif"],
-
       },
       colors: {
- 
         darkGreen: "#1b313e",
         lightGreen: "#156973",
         brightGreen: "#07c0b6",

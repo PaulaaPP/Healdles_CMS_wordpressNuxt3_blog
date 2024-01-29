@@ -22,7 +22,7 @@ const post = posts.value[0];
           <span class="mx-3"
             >Written by: {{ post._embedded["author"][0].name }}</span
           >
-          <p>Published on: {{ post.date }}</p>
+          <p>Published on: {{ new Date(post.date).toLocaleDateString() }}</p>
         </div>
         <!-- post image -->
         <div

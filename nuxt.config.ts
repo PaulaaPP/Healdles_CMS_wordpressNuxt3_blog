@@ -4,13 +4,13 @@ export default defineNuxtConfig({
   app: {
     head: {
       charset: "utf-8",
-      title: "Od Zera do Frontentd Developera",
+      title: "From Zero to Front-End Hero",
       viewport: "width=device-width, initial-scale=1",
       meta: [
         {
           name: "description",
           content:
-            "Blog o nauce programowania, tematyka aplikacji webowych głównie dla początkujących Juniorów",
+            "A blog about learning programming, the subject of web applications mainly for junior beginners",
         },
       ],
     },
