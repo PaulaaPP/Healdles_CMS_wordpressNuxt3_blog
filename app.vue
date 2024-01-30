@@ -17,12 +17,13 @@
 } */
 </style>
 
-<script setup>
+<!-- <script setup>
 import { ref } from "vue";
 
 const darkMode = ref(false);
 
 const toggleDarkMode = () => {
   darkMode.value = !darkMode.value;
+  console.log("Dark mode toggled. New value:", darkMode.value);
 };
-</script>
+</script> -->
